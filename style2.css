@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    overflow: auto;
+    background: darkblue;
+}
+
+
+ul{
+    padding: 0;
+    margin: 0 0 0 700px;
+    list-style: none;
+}
+
+
+li {
+    float: left;
+    margin-right: 40px;
+}
+
+li a {
+    width: 100px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: arial;
+    text-align: center;
+    color: orange;
+    font-size: 18px ;
+}
+
+li a:hover {
+    background: lightblue;
+}
+
+.pic img{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: larger;
+}
+
+.v{
+    width:100vw;
+    height:100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+}
+
+@media (max-aspect-ratio: 16/9)
+{
+   .v{
+    width: 100%;
+    height: auto;
+   }
+}
+
+@media (max-aspect-ratio: 16/9)
+{
+   .v{
+    width: auto;
+    height: 100%;
+   }
+}
+
+.banner{
+    z-index: 0;
+    height: 15vh;
+    width: 90vw;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    position: relative;
+    top: 5vh;
+    font-size: 7px;
+    left:5vw;
+    text-align: center;
+    background: darkblue;
+    padding-bottom: 200px;
+}
+
+.x{
+    color: orange;
+}
+
+.footer{
+    background-color: darkblue;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    height: 15vh;
+}
+
+.icons{
+    position: fixed;
+    top:88vh;
+    margin-left: 500px ;
+}
+#facebook {
+    background-image: url(img/sprite.png);
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 65px;
+    background-position: -440px -146px;
+    display: inline-block;
+}
+
+#google {
+    background-image: url(img/sprite.png);
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 65px;
+    background-position:  -365px -221px;
+    display: inline-block;
+}
+
+#twitter {
+    background-image: url(img/sprite.png);
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 65px;
+    background-position: -67px -73px;
+    display: inline-block;
+}
+
+#instagram {
+    background-image: url(img/sprite.png);
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 65px;
+    background-position: -290px -221px;
+    display: inline-block;
+}
